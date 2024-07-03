@@ -7,4 +7,6 @@ check from cookieInventory
 */
 //making a generic function that takes in a object and
 // returns a union type of all the keys of the object as strings.
-type CookieSurveyInput<T> = Extract<keyof T,string>;
+type CookieSurveyInput<T> = Extract<keyof T, string>;
+//another way
+type CookieSurveyInput2<Obj> = keyof Obj;
